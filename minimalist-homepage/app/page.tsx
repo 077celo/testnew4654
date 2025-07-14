@@ -71,7 +71,7 @@ export default function Home() {
                 className="flex flex-wrap gap-4 pt-4"
               >
                 <Link
-                  href="/challenge"
+                  href="/portfolio"
                   className="inline-block bg-transparent border border-[#00FF00]/20 text-[#00FF00]
                              px-8 py-4 text-sm tracking-wider rounded-sm hover:bg-[#00FF00]/10
                              transition-all duration-300"
