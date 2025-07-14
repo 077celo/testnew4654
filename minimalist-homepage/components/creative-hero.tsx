@@ -61,9 +61,9 @@ export function CreativeHero() {
         this.density = Math.random() * 30 + 1
         this.distance = 0
 
-        // Create a gradient from purple to pink
-        const hue = Math.random() * 60 + 270 // 270-330 range for purples and pinks
-        this.color = `hsl(${hue}, 70%, 60%)`
+        // Create a gradient from lime green to cyan-green
+        const hue = Math.random() * 60 + 90 // 90–150 range for greens
+        this.color = `hsl(${hue}, 80%, 55%)`
       }
 
       update() {
