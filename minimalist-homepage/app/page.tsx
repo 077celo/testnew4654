@@ -6,20 +6,18 @@ import { Menu } from "lucide-react"
 
 export default function Home() {
   return (
-<div class="relative h-screen bg-black overflow-hidden">
-  <div class="absolute inset-0 z-0">
-    <div
-      class="absolute inset-0 bg-cover bg-center"
-      style={{
-        backgroundImage: `url('https://i.ibb.co/TMcNhqbc/landing.png')`,
-      }}
-    />
-    <div class="absolute inset-0 bg-black/50" /> 
-  </div>
-  <div class="relative z-10 flex h-full items-center justify-center">
-    <h1 class="text-white text-4xl">Your Content Here</h1>
-  </div>
-</div>
+    // This is the single root element that contains everything
+    <div className="relative h-screen bg-black overflow-hidden">
+      {/* Background Image Container */}
+      <div className="absolute inset-0 z-0">
+        <div
+          className="absolute inset-0 bg-cover bg-center"
+          style={{
+            backgroundImage: `url('https://i.ibb.co/TMcNhqbc/landing.png')`,
+          }}
+        />
+        <div className="absolute inset-0 bg-black/50" />
+      </div>
 
       {/* Navigation */}
       <header className="relative z-10 px-8 py-6">
@@ -32,8 +30,8 @@ export default function Home() {
           </Link>
           <Link
             href="/login"
-            className="text-xs text-[#00FF00] border border-[#00FF00]/20 px-4 py-2 rounded-full 
-                     hover:bg-[#00FF00]/10 transition-all duration-300"
+            className="text-xs text-[#00FF00] border border-[#00FF00]/20 px-4 py-2 rounded-full
+                       hover:bg-[#00FF00]/10 transition-all duration-300"
           >
             CONTACT
           </Link>
@@ -74,17 +72,17 @@ export default function Home() {
               >
                 <Link
                   href="/challenge"
-                  className="inline-block bg-transparent border border-[#00FF00]/20 text-[#00FF00] 
-                           px-8 py-4 text-sm tracking-wider rounded-sm hover:bg-[#00FF00]/10 
-                           transition-all duration-300"
+                  className="inline-block bg-transparent border border-[#00FF00]/20 text-[#00FF00]
+                             px-8 py-4 text-sm tracking-wider rounded-sm hover:bg-[#00FF00]/10
+                             transition-all duration-300"
                 >
                   PORTFOLIO
                 </Link>
                 <Link
                   href="/learn"
-                  className="inline-block bg-[#00FF00]/10 text-[#00FF00] 
-                           px-8 py-4 text-sm tracking-wider rounded-sm hover:bg-[#00FF00]/20 
-                           transition-all duration-300"
+                  className="inline-block bg-[#00FF00]/10 text-[#00FF00]
+                             px-8 py-4 text-sm tracking-wider rounded-sm hover:bg-[#00FF00]/20
+                             transition-all duration-300"
                 >
                   CURRICULUM
                 </Link>
