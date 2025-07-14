@@ -127,7 +127,7 @@ export default function Home() {
             className="mt-24 border-t border-gray-800 py-8 relative z-10"
           >
             <div className="max-w-6xl mx-auto px-4 flex flex-col md:flex-row justify-between items-center">
-              <p className="text-gray-500 text-sm mb-4 md:mb-0">&copy; 2025 Varti Studio. All rights reserved.</p>
+              <p className="text-gray-500 text-sm mb-4 md:mb-0">&copy; 2025 Marcelo Bensabath. All rights reserved.</p>
               <div className="flex space-x-4">
                 <Link href="/privacy" className="text-sm text-gray-500 hover:text-green-400 transition-colors duration-300 ease-out">Privacy Policy</Link>
                 <Link href="/terms" className="text-sm text-gray-500 hover:text-green-400 transition-colors duration-300 ease-out">Terms of Service</Link>
