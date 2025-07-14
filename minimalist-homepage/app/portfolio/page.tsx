@@ -32,14 +32,14 @@ export default function Portfolio() {
           <div className="space-y-6">
             <div className="inline-block">
               <div className="relative px-3 py-1 text-sm font-medium rounded-full bg-white/10 backdrop-blur-sm border border-white/20 mb-4 mt-4">
-                <span className="relative z-10">Software Engineer & Creative Developer</span>
-                <span className="absolute inset-0 rounded-full bg-gradient-to-r from-purple-500/20 to-pink-500/20 animate-pulse"></span>
+                <span className="relative z-10">Technical Artist & Gameplay Programmer</span>
+                <span className="absolute inset-0 rounded-full bg-gradient-to-r from-green-500/20 to-cyan-950/20 animate-pulse"></span>
               </div>
             </div>
             <h1 className="text-5xl md:text-7xl font-bold tracking-tight">
               <span className="block">Hi, I'm</span>
               <span className="bg-clip-text text-transparent bg-gradient-to-r from-green-400 to-green-900">
-                Shine Kyaw Kyaw Aung
+                Marcelo Bensabath
               </span>
             </h1>
             <p className="text-xl text-zinc-400 max-w-[600px]">
@@ -60,7 +60,7 @@ export default function Portfolio() {
               </Button>
             </div>
             <div className="flex gap-4 pt-4">
-              <Link href="https://github.com/shinekyaw" target="_blank" rel="noopener noreferrer">
+              <Link href="https://github.com/" target="_blank" rel="noopener noreferrer">
                 <Button
                   variant="ghost"
                   size="icon"
@@ -70,7 +70,7 @@ export default function Portfolio() {
                   <span className="sr-only">GitHub</span>
                 </Button>
               </Link>
-              <Link href="https://www.linkedin.com/in/shinekyawkyawaung/" target="_blank" rel="noopener noreferrer">
+              <Link href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer">
                 <Button
                   variant="ghost"
                   size="icon"
@@ -80,7 +80,7 @@ export default function Portfolio() {
                   <span className="sr-only">LinkedIn</span>
                 </Button>
               </Link>             
-              <Link href="mailto:shinekyawkyawaung@gmail.com">
+              <Link href="mailto:marcelo.mmedia@gmail.com">
                 <Button
                   variant="ghost"
                   size="icon"
@@ -120,7 +120,7 @@ export default function Portfolio() {
               <div className="relative aspect-square rounded-xl overflow-hidden border border-zinc-800">
                 <img
                   src="/placeholder.svg?height=600&width=600"
-                  alt="Shine Kyaw Kyaw Aung"
+                  alt="Marcelo Bensabath"
                   className="w-full h-full object-cover"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
