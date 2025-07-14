@@ -69,8 +69,8 @@ export function FloatingNav() {
           ) : (
             <div className="relative flex items-center gap-1">
               <Link href="/" className="font-bold text-lg mr-4">
-                <span className="bg-clip-text text-transparent bg-gradient-to-r from-cyan-950 to-green-400">Shine</span>
-                <span className="text-white">KKA</span>
+                <span className="bg-clip-text text-transparent bg-gradient-to-r from-cyan-950 to-green-400">077</span>
+                <span className="text-white">CELO</span>
               </Link>
               {navItems.map((item) => (
                 <Link
