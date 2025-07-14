@@ -6,21 +6,20 @@ import { Menu } from "lucide-react"
 
 export default function Home() {
   return (
-    <div className="relative min-h-screen bg-black overflow-hidden">
-      {/* Background with integrated image */}
-      <div className="absolute inset-0 z-0">
-        <div
-          className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-40 mix-blend-screen"
-          style={{
-            backgroundImage: `url('https://i.ibb.co/TMcNhqbc/landing.png')`,
-            filter: "brightness(1.2) contrast(1.1)",
-          }}
-          role="img"
-          aria-label="Decorative green cat background"
-        />
-        <div className="absolute inset-0 bg-gradient-to-b from-black via-transparent to-black" />
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(0,255,0,0.1),transparent_70%)]" />
-      </div>
+<div class="relative h-screen bg-black overflow-hidden">
+  <div class="absolute inset-0 z-0">
+    <div
+      class="absolute inset-0 bg-cover bg-center"
+      style={{
+        backgroundImage: `url('https://i.ibb.co/TMcNhqbc/landing.png')`,
+      }}
+    />
+    <div class="absolute inset-0 bg-black/50" /> 
+  </div>
+  <div class="relative z-10 flex h-full items-center justify-center">
+    <h1 class="text-white text-4xl">Your Content Here</h1>
+  </div>
+</div>
 
       {/* Navigation */}
       <header className="relative z-10 px-8 py-6">
