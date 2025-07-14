@@ -1,7 +1,7 @@
 "use client"
 
 import { motion } from "framer-motion"
-import { useMobile } from "@/hooks/use-mobile"
+import { useIsMobile } from "@/hooks/use-mobile"
 
 const experiences = [
   {
@@ -34,7 +34,7 @@ const experiences = [
 ]
 
 export function Timeline() {
-  const isMobile = useMobile()
+  const isMobile = useIsMobile()
 
   return (
     <div
