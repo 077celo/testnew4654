@@ -6,12 +6,12 @@ import { motion } from "framer-motion"
 import { Menu, X } from "lucide-react"
 
 import { Button } from "@/components/ui/button"
-import { useMobile } from "@/hooks/use-mobile"
+import { useIsMobile } from "@/hooks/use-mobile"
 
 export function FloatingNav() {
   const [isVisible, setIsVisible] = useState(false)
   const [isOpen, setIsOpen] = useState(false)
-  const isMobile = useMobile()
+  const isMobile = useIsMobile()
 
   useEffect(() => {
     const handleScroll = () => {
