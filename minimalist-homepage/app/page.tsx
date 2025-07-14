@@ -26,7 +26,7 @@ export default function Home() {
             <Menu className="w-6 h-6" />
           </button>
           <Link href="/" className="text-[#00FF00] text-sm tracking-widest hover:text-[#00FF00]/80 transition-colors">
-            VARTI
+            CELO
           </Link>
           <Link
             href="/login"
@@ -55,8 +55,8 @@ export default function Home() {
                 <span className="inline-block transform -skew-x-12">MARC</span>
                 <span className="inline-block transform skew-x-12">ELO</span>
                 <span className="block mt-2">
-                  <span className="inline-block transform -skew-x-12">BENS</span>
-                  <span className="inline-block transform skew-x-12">ABATH</span>
+                  <span className="inline-block transform -skew-x-12">BENSA</span>
+                  <span className="inline-block transform skew-x-12">BATH</span>
                 </span>
               </h1>
               <div className="space-y-1">
