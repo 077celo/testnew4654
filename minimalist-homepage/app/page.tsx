@@ -35,7 +35,7 @@ export default function Home() {
             className="text-xs text-[#00FF00] border border-[#00FF00]/20 px-4 py-2 rounded-full 
                      hover:bg-[#00FF00]/10 transition-all duration-300"
           >
-            JOIN NOW
+            CONTACT
           </Link>
         </nav>
       </header>
@@ -54,16 +54,16 @@ export default function Home() {
                 CHALLENGE <span className="text-[#00FF00]">YOURSELF™</span>
               </div>
               <h1 className="text-7xl font-bold tracking-tighter text-white" style={{ fontFamily: "Arial Black" }}>
-                <span className="inline-block transform -skew-x-12">HAB</span>
-                <span className="inline-block transform skew-x-12">IT</span>
+                <span className="inline-block transform -skew-x-12">MARC</span>
+                <span className="inline-block transform skew-x-12">ELO</span>
                 <span className="block mt-2">
-                  <span className="inline-block transform -skew-x-12">HUNT</span>
-                  <span className="inline-block transform skew-x-12">ER</span>
+                  <span className="inline-block transform -skew-x-12">BENS</span>
+                  <span className="inline-block transform skew-x-12">ABATH</span>
                 </span>
               </h1>
               <div className="space-y-1">
                 <p className="text-[#00FF00] text-sm">" CHASE YOUR POTENTIAL "</p>
-                <p className="text-gray-400 text-xs tracking-wider">21 DAYS TO TRANSFORM YOUR LIFE</p>
+                <p className="text-gray-400 text-xs tracking-wider">WELCOME TO MY WEBSITE</p>
               </div>
 
               <motion.div
@@ -78,7 +78,7 @@ export default function Home() {
                            px-8 py-4 text-sm tracking-wider rounded-sm hover:bg-[#00FF00]/10 
                            transition-all duration-300"
                 >
-                  START CHALLENGE
+                  PORTFOLIO
                 </Link>
                 <Link
                   href="/learn"
@@ -86,7 +86,7 @@ export default function Home() {
                            px-8 py-4 text-sm tracking-wider rounded-sm hover:bg-[#00FF00]/20 
                            transition-all duration-300"
                 >
-                  LEARN MORE
+                  CURRICULUM
                 </Link>
               </motion.div>
             </motion.div>
@@ -102,7 +102,7 @@ export default function Home() {
             <span className="text-[#00FF00]">1</span>
           </div>
           <div className="text-[10px] text-gray-500">
-            2025 © VARTI STUDIO - TRANSFORM YOUR HABITS, TRANSFORM YOUR LIFE
+            2025 © MARCELO BENSABATH - SENIOR TECHNICAL ARTIST
           </div>
         </div>
       </footer>
