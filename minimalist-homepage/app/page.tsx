@@ -12,7 +12,7 @@ export default function Home() {
         <div
           className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-40 mix-blend-screen"
           style={{
-            backgroundImage: `url('https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-b0m9O1QEBHRhGRcIwzfxdJ324BLxfi.png')`,
+            backgroundImage: `url('https://i.ibb.co/TMcNhqbc/landing.png')`,
             filter: "brightness(1.2) contrast(1.1)",
           }}
           role="img"
