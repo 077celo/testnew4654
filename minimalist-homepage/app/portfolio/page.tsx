@@ -1,3 +1,6 @@
+"use client"
+
+
 import { useEffect, useRef, useState } from "react"
 import Link from "next/link"
 import { ArrowRight, Github, Linkedin, Mail } from "lucide-react"
