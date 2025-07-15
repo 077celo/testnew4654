@@ -31,7 +31,7 @@ export default function Home() {
 
   return (
     <AnimatePresence>
-      {isLoaded ? (
+      {isLoaded && (
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
