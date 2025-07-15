@@ -28,7 +28,7 @@ export default function Portfolio() {
           <div className="absolute bottom-20 left-1/3 w-72 h-72 bg-green-900 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-blob animation-delay-4000"></div>
         </div>
 
-        <div className="container relative z-10 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        <div className="container mx-auto relative z-10 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div className="space-y-6">
             <div className="inline-block">
               <div className="relative px-3 py-1 text-sm font-medium rounded-full bg-white/10 backdrop-blur-sm border border-white/20 mb-4 mt-4">
@@ -111,7 +111,7 @@ export default function Portfolio() {
           <div className="absolute bottom-1/3 left-1/3 w-64 h-64 bg-cyan-500 rounded-full mix-blend-multiply filter blur-3xl opacity-10"></div>
         </div>
 
-        <div className="container relative z-10">
+        <div className="container mx-auto relative z-10">
           <SectionHeading title="About Me" subtitle="My background and journey" />
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center mt-16">
@@ -184,7 +184,7 @@ export default function Portfolio() {
           <div className="absolute bottom-1/4 right-1/4 w-64 h-64 bg-green-500 rounded-full mix-blend-multiply filter blur-3xl opacity-10"></div>
         </div>
 
-        <div className="container relative z-10">
+        <div className="container mx-auto relative z-10">
           <SectionHeading title="My Skills" subtitle="Technologies I work with" />
 
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 mt-16">
@@ -211,7 +211,7 @@ export default function Portfolio() {
           <div className="absolute bottom-1/3 right-1/4 w-64 h-64 bg-yellow-500 rounded-full mix-blend-multiply filter blur-3xl opacity-10"></div>
         </div>
 
-        <div className="container relative z-10">
+        <div className="container mx-auto relative z-10">
           <SectionHeading title="Featured Projects" subtitle="Some of my recent work" />
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-16">
@@ -274,7 +274,7 @@ export default function Portfolio() {
           <div className="absolute bottom-1/4 left-1/4 w-64 h-64 bg-blue-500 rounded-full mix-blend-multiply filter blur-3xl opacity-10"></div>
         </div>
 
-        <div className="container relative z-10">
+        <div className="container mx-auto relative z-10">
           <SectionHeading title="Work Experience" subtitle="My professional journey" />
 
           <div className="mt-16">
@@ -290,7 +290,7 @@ export default function Portfolio() {
           <div className="absolute bottom-1/3 right-1/3 w-64 h-64 bg-purple-500 rounded-full mix-blend-multiply filter blur-3xl opacity-10"></div>
         </div>
 
-        <div className="container relative z-10">
+        <div className="container mx-auto relative z-10">
           <SectionHeading title="Get In Touch" subtitle="Let's work together" />
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center mt-16">
