@@ -1,3 +1,4 @@
+import { useEffect, useRef, useState } from "react"
 import Link from "next/link"
 import { ArrowRight, Github, Linkedin, Mail } from "lucide-react"
 
@@ -14,8 +15,51 @@ import { SectionHeading } from "@/components/section-heading"
 import { GlassmorphicCard } from "@/components/glassmorphic-card"
 
 export default function Portfolio() {
+  const cursorRef = useRef<HTMLDivElement>(null)
+  const [isHovering, setIsHovering] = useState(false)
+
+  useEffect(() => {
+    const handleMouseMove = (e: MouseEvent) => {
+      if (cursorRef.current) {
+        cursorRef.current.style.left = `${e.clientX}px`
+        cursorRef.current.style.top = `${e.clientY}px`
+      }
+    }
+
+    const handleMouseEnter = () => setIsHovering(true)
+    const handleMouseLeave = () => setIsHovering(false)
+
+    // Add hover listeners to interactive elements
+    const interactiveElements = document.querySelectorAll('a, button, [role="button"]')
+    interactiveElements.forEach(el => {
+      el.addEventListener('mouseenter', handleMouseEnter)
+      el.addEventListener('mouseleave', handleMouseLeave)
+    })
+
+    document.addEventListener("mousemove", handleMouseMove)
+
+    return () => {
+      document.removeEventListener("mousemove", handleMouseMove)
+      interactiveElements.forEach(el => {
+        el.removeEventListener('mouseenter', handleMouseEnter)
+        el.removeEventListener('mouseleave', handleMouseLeave)
+      })
+    }
+  }, [])
+
   return (
     <div className="min-h-screen bg-gradient-to-b from-zinc-900 via-zinc-900 to-black text-white">
+      {/* Custom Cursor using your CSS classes */}
+      <div
+        ref={cursorRef}
+        className={`cursor-spotlight ${isHovering ? 'hovering' : ''}`}
+        style={{
+          transform: 'translate(-50%, -50%)',
+        }}
+      >
+        <div className="inner-circle"></div>
+      </div>
+
       <MouseFollower />
       <ScrollProgress />
       <FloatingNav />
@@ -303,7 +347,7 @@ export default function Portfolio() {
                   </div>
                   <div>
                     <div className="text-sm text-zinc-500">Email</div>
-                    <div className="font-medium">shinekyawkyawaung@gmail.com</div>
+                    <div className="font-medium">marcelo.mmedia@gmail.com</div>
                   </div>
                 </div>
                 <div className="flex items-center gap-4">
@@ -312,7 +356,7 @@ export default function Portfolio() {
                   </div>
                   <div>
                     <div className="text-sm text-zinc-500">LinkedIn</div>
-                    <div className="font-medium">linkedin.com/in/shinekyawkyawaung</div>
+                    <div className="font-medium">linkedin.com/in/marcelobensabath</div>
                   </div>
                 </div>
                 <div className="flex items-center gap-4">
@@ -321,7 +365,7 @@ export default function Portfolio() {
                   </div>
                   <div>
                     <div className="text-sm text-zinc-500">GitHub</div>
-                    <div className="font-medium">github.com/shinekyaw</div>
+                    <div className="font-medium">github.com/marcelobensabath</div>
                   </div>
                 </div>
               </div>
@@ -345,15 +389,15 @@ export default function Portfolio() {
         <div className="container flex flex-col md:flex-row justify-between items-center gap-6">
           <div>
             <Link href="/" className="font-bold text-xl">
-              <span className="bg-clip-text text-transparent bg-gradient-to-r from-purple-400 to-pink-600">Shine</span>
-              <span className="text-white">KKA</span>
+              <span className="bg-clip-text text-transparent bg-gradient-to-r from-green-400 to-cyan-600">Marcelo</span>
+              <span className="text-white">Bensabath</span>
             </Link>
             <p className="text-sm text-zinc-500 mt-2">
-              © {new Date().getFullYear()} Shine Kyaw Kyaw Aung. All rights reserved.
+              © {new Date().getFullYear()} Marcelo Bensabath. All rights reserved.
             </p>
           </div>
           <div className="flex gap-4">
-            <Link href="https://github.com/shinekyaw" target="_blank" rel="noopener noreferrer">
+            <Link href="https://github.com/marcelobensabath" target="_blank" rel="noopener noreferrer">
               <Button
                 variant="ghost"
                 size="icon"
@@ -363,7 +407,7 @@ export default function Portfolio() {
                 <span className="sr-only">GitHub</span>
               </Button>
             </Link>
-            <Link href="https://www.linkedin.com/in/shinekyawkyawaung/" target="_blank" rel="noopener noreferrer">
+            <Link href="https://www.linkedin.com/in/marcelobensabath/" target="_blank" rel="noopener noreferrer">
               <Button
                 variant="ghost"
                 size="icon"
@@ -373,7 +417,7 @@ export default function Portfolio() {
                 <span className="sr-only">LinkedIn</span>
               </Button>
             </Link>
-            <Link href="mailto:shinekyawkyawaung@gmail.com">
+            <Link href="mailto:marcelo.mmedia@gmail.com">
               <Button
                 variant="ghost"
                 size="icon"
