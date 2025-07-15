@@ -64,7 +64,7 @@ export default function Home() {
 
     <AnimatePresence>
 
-      {isLoaded && (
+      {isLoaded ? (
 
         <motion.div
 
