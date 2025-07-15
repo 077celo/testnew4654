@@ -33,6 +33,7 @@ export default function Home() {
     <AnimatePresence>
       {isLoaded && (
         <motion.div
+          key="page-content"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.8 }}
