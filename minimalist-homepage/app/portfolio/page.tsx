@@ -152,15 +152,15 @@ export default function Portfolio() {
                 <div className="grid grid-cols-2 gap-4 mt-8">
                   <div className="space-y-1">
                     <div className="text-sm text-zinc-500">Name</div>
-                    <div className="font-medium">Shine Kyaw Kyaw Aung</div>
+                    <div className="font-medium">Marcelo Bensabath</div>
                   </div>
                   <div className="space-y-1">
                     <div className="text-sm text-zinc-500">Email</div>
-                    <div className="font-medium">shinekyawkyawaung@gmail.com</div>
+                    <div className="font-medium">marcelo.mmedia@gmail.com</div>
                   </div>
                   <div className="space-y-1">
                     <div className="text-sm text-zinc-500">Location</div>
-                    <div className="font-medium">Myanmar</div>
+                    <div className="font-medium">Japan</div>
                   </div>
                   <div className="space-y-1">
                     <div className="text-sm text-zinc-500">Availability</div>
