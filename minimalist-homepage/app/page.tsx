@@ -10,6 +10,7 @@ export default function Home() {
   const [isLoaded, setIsLoaded] = useState(false)
   const gradientRef = useRef<HTMLDivElement>(null)
   const cursorRef = useRef<HTMLDivElement>(null)
+  const [isHovering, setIsHovering] = useState(false)
 
   useEffect(() => {
     const handleMouseMove = (e: MouseEvent) => {
@@ -27,11 +28,25 @@ export default function Home() {
       }
     }
 
+    const handleMouseEnter = () => setIsHovering(true)
+    const handleMouseLeave = () => setIsHovering(false)
+
+    // Add hover listeners to interactive elements
+    const interactiveElements = document.querySelectorAll('a, button, [role="button"]')
+    interactiveElements.forEach(el => {
+      el.addEventListener('mouseenter', handleMouseEnter)
+      el.addEventListener('mouseleave', handleMouseLeave)
+    })
+
     document.addEventListener("mousemove", handleMouseMove)
     setIsLoaded(true)
 
     return () => {
       document.removeEventListener("mousemove", handleMouseMove)
+      interactiveElements.forEach(el => {
+        el.removeEventListener('mouseenter', handleMouseEnter)
+        el.removeEventListener('mouseleave', handleMouseLeave)
+      })
     }
   }, [])
 
@@ -42,18 +57,18 @@ export default function Home() {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.8 }}
-          className="relative min-h-screen bg-black overflow-hidden text-white cursor-none"
+          className="relative min-h-screen bg-black overflow-hidden text-white"
         >
-          {/* Custom Cursor */}
+          {/* Custom Cursor using your CSS classes */}
           <div
             ref={cursorRef}
-            className="fixed w-6 h-6 bg-[#00FF00] rounded-full pointer-events-none z-50 mix-blend-difference"
+            className={`cursor-spotlight ${isHovering ? 'hovering' : ''}`}
             style={{
               transform: 'translate(-50%, -50%)',
-              transition: 'all 0.1s ease-out',
-              boxShadow: '0 0 10px rgba(0,255,0,0.5)',
             }}
-          />
+          >
+            <div className="inner-circle"></div>
+          </div>
           {/* Interactive Mouse Gradient */}
           <div
             ref={gradientRef}
