@@ -216,11 +216,11 @@ export default function Portfolio() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-16">
             <ProjectCard
-              title="Procedural Foliage Environment"
-              description="Real-time, Tsushima-inspired scene using procedural foliage & Bézier curves."
-              tags={["Unreal", "PCG", "Shaders", "Environment Art"]}
+              title="E-commerce Platform"
+              description="A full-stack e-commerce platform built with Next.js, Stripe, and Prisma."
+              tags={["Next.js", "TypeScript", "Prisma", "Stripe"]}
               image="/placeholder.svg?height=400&width=600"
-              demoUrl="https://www.artstation.com/artwork/K36Y04"
+              demoUrl="https://example.com"
               repoUrl="https://github.com"
             />
             <ProjectCard
