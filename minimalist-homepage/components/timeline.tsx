@@ -56,7 +56,7 @@ export function Timeline() {
             transition={{ duration: 0.5 }}
             viewport={{ once: true }}
           >
-            <div className="relative overflow-hidden rounded-xl bg-zinc-800/50 backdrop-blur-sm border border-zinc-700/50 p-6 transition-all duration-300 hover:border-purple-500/50">
+            <div className="relative overflow-hidden rounded-xl bg-zinc-800/50 backdrop-blur-sm border border-zinc-700/50 p-6 transition-all duration-300 hover:border-green-400/50">
               <div className="absolute -inset-1 bg-gradient-to-r from-green-400/10 to-cyan-950/10 rounded-xl blur opacity-25 hover:opacity-100 transition duration-1000 hover:duration-200"></div>
 
               <div className="relative">
