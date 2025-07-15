@@ -15,13 +15,13 @@ import { GlassmorphicCard } from "@/components/glassmorphic-card"
 
 export default function Portfolio() {
   return (
-    <div className="min-h-screen bg-gradient-to-b from-zinc-900 via-zinc-900 to-black text-white overflow-hidden">
+    <div className="min-h-screen bg-gradient-to-b from-zinc-900 via-zinc-900 to-black text-white">
       <MouseFollower />
       <ScrollProgress />
       <FloatingNav />
 
       {/* Hero Section */}
-      <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+      <section className="relative min-h-screen flex items-center justify-center">
         <div className="absolute inset-0 z-0">
           <div className="absolute top-20 left-10 w-72 h-72 bg-green-600 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-blob"></div>
           <div className="absolute top-40 right-10 w-72 h-72 bg-cyan-950 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-blob animation-delay-2000"></div>
@@ -46,7 +46,7 @@ export default function Portfolio() {
               I craft exceptional digital experiences with code, creativity, and a passion for innovation.
             </p>
             <div className="flex flex-wrap gap-4 pt-4">
-              <Button className="relative overflow-hidden group bg-gradient-to-r from-green-500 to-cyan-950 border-0">
+              <Button className="relative group bg-gradient-to-r from-green-500 to-cyan-950 border-0">
                 <span className="relative z-10 flex items-center">
                   View Projects <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
                 </span>
@@ -117,7 +117,7 @@ export default function Portfolio() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center mt-16">
             <div className="relative">
               <div className="absolute -inset-4 rounded-xl bg-gradient-to-r from-green-400/20 to-cyan-700/20 blur-xl opacity-70"></div>
-              <div className="relative aspect-square rounded-xl overflow-hidden border border-zinc-800">
+              <div className="relative aspect-square rounded-xl border border-zinc-800">
                 <img
                   src="/placeholder.svg?height=600&width=600"
                   alt="Marcelo Bensabath"
