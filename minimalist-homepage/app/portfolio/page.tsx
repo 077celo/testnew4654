@@ -62,7 +62,6 @@ export default function Portfolio() {
         <div className="inner-circle"></div>
       </div>
 
-      <MouseFollower />
       <ScrollProgress />
       <FloatingNav />
 
