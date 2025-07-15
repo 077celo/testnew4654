@@ -9,6 +9,7 @@ import { Button } from "@/components/ui/button"
 export default function Home() {
   const [isLoaded, setIsLoaded] = useState(false)
   const gradientRef = useRef<HTMLDivElement>(null)
+  const cursorRef = useRef<HTMLDivElement>(null)
 
   useEffect(() => {
     const handleMouseMove = (e: MouseEvent) => {
@@ -18,6 +19,11 @@ export default function Home() {
         const y = e.clientY - rect.top
         gradientRef.current.style.setProperty('--mouse-x', `${x}px`)
         gradientRef.current.style.setProperty('--mouse-y', `${y}px`)
+      }
+      
+      if (cursorRef.current) {
+        cursorRef.current.style.left = `${e.clientX}px`
+        cursorRef.current.style.top = `${e.clientY}px`
       }
     }
 
@@ -36,8 +42,18 @@ export default function Home() {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.8 }}
-          className="relative min-h-screen bg-black overflow-hidden text-white"
+          className="relative min-h-screen bg-black overflow-hidden text-white cursor-none"
         >
+          {/* Custom Cursor */}
+          <div
+            ref={cursorRef}
+            className="fixed w-6 h-6 bg-[#00FF00] rounded-full pointer-events-none z-50 mix-blend-difference"
+            style={{
+              transform: 'translate(-50%, -50%)',
+              transition: 'all 0.1s ease-out',
+              boxShadow: '0 0 10px rgba(0,255,0,0.5)',
+            }}
+          />
           {/* Interactive Mouse Gradient */}
           <div
             ref={gradientRef}
