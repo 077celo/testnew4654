@@ -219,7 +219,7 @@ export default function Portfolio() {
               title="Procedural Foliage Environment"
               description="Real-time, Tsushima-inspired scene using procedural foliage & Bézier curves."
               tags={["Unreal", "PCG", "Shaders", "Environment Art"]}
-              image="https://github.com/077celo/testnew4654/blob/main/minimalist-homepage/image_repo/Procedural%20Foliage.png"
+              image="https://cdna.artstation.com/p/assets/images/images/078/638/376/large/marcelo-b-grass-0031.jpg?1722651447"
               demoUrl="https://www.artstation.com/artwork/K36Y04"
               repoUrl="https://github.com"
             />
