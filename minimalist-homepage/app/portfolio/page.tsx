@@ -266,6 +266,7 @@ export default function Portfolio() {
               tags={["Unreal", "PCG", "Shaders", "Environment Art"]}
               image="https://cdna.artstation.com/p/assets/images/images/078/638/376/large/marcelo-b-grass-0031.jpg?1722651447?height=400&width=600"
               demoUrl="https://www.artstation.com/artwork/K36Y04"
+              repoUrl="https://github.com"
             />
             <ProjectCard
               title="Volumetrics and Fluid Simulations"
@@ -273,12 +274,15 @@ export default function Portfolio() {
               tags={["Unreal", "Houdini", "VDB", "Simulation"]}
               image="https://cdnb.artstation.com/p/assets/images/images/078/283/313/large/marcelo-b-highresscreenshot00009.jpg?1721697734?height=400&width=600"
               demoUrl="https://www.artstation.com/artwork/kQAAQn"
+              repoUrl="https://github.com"
             />
             <ProjectCard
               title="Unreal Shader Development"
               description="Fully customizable weather, surface and vegetation shaders made in Unreal."
               tags={["Unreal", "Blueprint", "C++", "HLSL"]}
               image="https://cdna.artstation.com/p/assets/images/images/071/760/106/large/marcelo-b-newlevelsequence-0000.jpg?1705893649?height=400&width=600"
+              demoUrl="https://example.com"
+              repoUrl="https://github.com"
             />
             <ProjectCard
               title="Fitness Tracker"
