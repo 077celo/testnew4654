@@ -269,11 +269,11 @@ export default function Portfolio() {
               repoUrl="https://github.com"
             />
             <ProjectCard
-              title="Task Management App"
-              description="A collaborative task management application with real-time updates."
-              tags={["React", "Firebase", "Tailwind CSS", "Redux"]}
-              image="/placeholder.svg?height=400&width=600"
-              demoUrl="https://example.com"
+              title="Volumetrics and Fluid Simulations"
+              description="PCG animation, fluids simulations, and use of imported VDB's from Houdini and Blender to Unreal"
+              tags={["Unreal", "Houdini", "VDB", "Simulation"]}
+              image="https://cdnb.artstation.com/p/assets/images/images/078/283/313/large/marcelo-b-highresscreenshot00009.jpg?1721697734?height=400&width=600"
+              demoUrl="https://www.artstation.com/artwork/kQAAQn"
               repoUrl="https://github.com"
             />
             <ProjectCard
