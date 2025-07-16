@@ -106,7 +106,7 @@ export default function Home() {
                 CELO
               </Link>
               <Link
-                href="/contact"
+                href="/portfolio#contact"
                 className="text-xs text-[#00FF00] border border-[#00FF00]/20 px-4 py-2 rounded-full
                            hover:bg-[#00FF00]/10 transition-all duration-300"
               >
@@ -163,11 +163,13 @@ export default function Home() {
                   variant="outline"
                   className="relative bg-black/20 backdrop-blur-sm text-gray-400 rounded-full px-8 py-6 text-sm font-light border border-gray-800 shadow-[0_0_15px_rgba(255,255,255,0.03)] hover:shadow-[0_0_25px_rgba(255,255,255,0.05)] hover:border-gray-700 hover:text-gray-300 transition-all duration-500 ease-out group overflow-hidden"
                 >
-                  <div className="relative flex items-center">
-                    <span className="relative z-10">CURRICULUM</span>
-                    <ArrowRight className="relative z-10 ml-2 h-5 w-5 transition-transform duration-500 ease-out group-hover:translate-x-1" />
-                    <div className="absolute inset-0 bg-gradient-to-r from-gray-800/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 ease-out" />
-                  </div>
+                  <Link href="/portfolio#experience">
+                    <div className="relative flex items-center">
+                      <span className="relative z-10">CURRICULUM</span>
+                      <ArrowRight className="relative z-10 ml-2 h-5 w-5 transition-transform duration-500 ease-out group-hover:translate-x-1" />
+                      <div className="absolute inset-0 bg-gradient-to-r from-gray-800/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 ease-out" />
+                    </div>
+                   </Link>
                 </Button>
               </motion.div>
             </motion.section>
