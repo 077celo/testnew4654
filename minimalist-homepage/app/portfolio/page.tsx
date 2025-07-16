@@ -164,7 +164,7 @@ export default function Portfolio() {
               <div className="absolute -inset-4 rounded-xl bg-gradient-to-r from-green-400/20 to-cyan-700/20 blur-xl opacity-70"></div>
               <div className="relative aspect-square rounded-xl border border-zinc-800">
                 <img
-                  src="/placeholder.svg?height=600&width=600"
+                  src="https://cdna.artstation.com/p/assets/images/images/068/104/244/large/marcelo-b-highresscreenshot00000.jpg?1696995672?height=600&width=600"
                   alt="Marcelo Bensabath"
                   className="w-full h-full object-cover"
                 />
@@ -288,7 +288,7 @@ export default function Portfolio() {
               title="Fitness Tracker"
               description="A mobile-first fitness tracking application with data visualization."
               tags={["React Native", "TypeScript", "D3.js", "Firebase"]}
-              image="/placeholder.svg?height=400&width=600"
+              image="https://cdna.artstation.com/p/assets/images/images/068/104/244/large/marcelo-b-highresscreenshot00000.jpg?1696995672?height=400&width=600"
               demoUrl="https://example.com"
               repoUrl="https://github.com"
             />
