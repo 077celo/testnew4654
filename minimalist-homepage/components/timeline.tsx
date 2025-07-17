@@ -5,31 +5,31 @@ import { useIsMobile } from "@/hooks/use-mobile"
 
 const experiences = [
   {
-    title: "Senior Frontend Engineer",
-    company: "Tech Innovations Inc.",
-    period: "2021 - Present",
+    title: "Senior Technical Artist",
+    company: "NullSurface inc.",
+    period: "2019 - 2025",
     description:
-      "Lead the frontend development team in building a SaaS platform. Implemented new features, improved performance, and mentored junior developers.",
+      "Developed procedural generation tools that streamlined 3D asset creation for characters, props, and environments. I optimized assets for performance, wrote C/C++ tools for pipelines, built pre-visualization prototypes, and collaborated across teams to ensure seamless integration into the game engine.",
   },
   {
-    title: "Frontend Developer",
-    company: "Digital Solutions Co.",
-    period: "2019 - 2021",
+    title: "Technical Artist",
+    company: "Epic Games",
+    period: "2018 - 2020",
     description:
-      "Developed responsive web applications using React and TypeScript. Collaborated with designers and backend engineers to deliver high-quality products.",
+      "Worked on technical and facial rigging, stylized animation, and motion capture. I developed tools in C++ and Blueprint, guided cross-team processes, and solved technical asset issues. I regularly presented design concepts and partnered across disciplines to improve both workflow and in-game performance.",
   },
   {
-    title: "Web Developer",
-    company: "Creative Agency",
-    period: "2017 - 2019",
+    title: "Game Artist & UI Designer",
+    company: "Level Up! Global",
+    period: "2017 - 2018",
     description:
-      "Built websites and web applications for various clients. Worked with HTML, CSS, JavaScript, and WordPress.",
+      "Created a wide range of visual assets including HUDs, icons, and promotional artwork. I maintained brand consistency, translated mockups into game-ready assets, optimized implementation, and tracked industry trends to create engaging visuals for various game genres.",
   },
   {
-    title: "Intern",
-    company: "Startup Hub",
-    period: "2016 - 2017",
-    description: "Assisted in developing web applications and learned modern web development practices.",
+    title: "Technical Artist",
+    company: "NullSurface inc.",
+    period: "2014 - 2016",
+    description: "Crafted 3D prototypes while managing strict performance budgets. I built C/C++ tools to automate tasks, created detailed models and materials, and documented pipeline standards. I also implemented procedural tools that allowed artists to generate complex assets more efficiently within the game engine.",
   },
 ]
 
