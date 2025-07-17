@@ -164,7 +164,7 @@ export default function Portfolio() {
               <div className="absolute -inset-4 rounded-xl bg-gradient-to-r from-green-400/20 to-cyan-700/20 blur-xl opacity-70"></div>
               <div className="relative aspect-square rounded-xl border border-zinc-800">
                 <img
-                  src="https://cdnb.artstation.com/p/assets/images/images/090/042/723/large/marcelo-b-dither-shader.jpg?1752710975?1696995672?height=600&width=600"
+                  src="https://cdna.artstation.com/p/assets/images/images/090/042/872/large/marcelo-b-dither-shader-gameboy.jpg?1752711692?height=600&width=600"
                   alt="Marcelo Bensabath"
                   className="w-full h-full object-cover"
                 />
